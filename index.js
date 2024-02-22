@@ -19,6 +19,10 @@ app.get("/healthz", (req, res) => {
   res.status(200).send("Server Is Up and Running.")
 })
 
+app.get("/kumar", (req, res) => {
+  res.status(200).send("Nee yaaruda komali")
+})
+
 app.post("/add/:id", (req, res) => {
   const id = req.params;
   const name = req.body.name;
